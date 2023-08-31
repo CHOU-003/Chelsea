@@ -1,0 +1,74 @@
+:root {
+    --The-blue: #001489;
+    --white-color: #fff;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+html {
+    font-size: 62.5%;
+    /* Khoang cach cac dong trong trang */
+    line-height: 1.6rem;  /*tuong duong 16px; */
+    /* sans-serif là chủng chữ không có chân */
+    font-family: Chelsea Basis,sans-serif;
+    box-sizing: border-box;
+}
+
+/* CHUẢN BỊ CHO RESPONSIVE */
+/* grid là chuẩn bị cho responsive */
+.grid {
+    display: flex;
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    /* 100/12 *10 (là 100% chia cho 12 cột */
+    width: 83.3334%;
+}
+
+@keyframes fadedown {
+    from {
+      z-index: 0;  
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    to {
+      z-index: 1;  
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
